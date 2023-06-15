@@ -2,28 +2,33 @@ package com.inheritence;
 
 public class Shape {
 	
-	private String color = null;
-	private int borderwidth = 0;
-	
-	//Getter Setter Method for Shape
-	
+	 extends Shape {
+			
+			
+			private int length;
+			private int width;
+			
+			//Getter Setter Method for Rectangle
+			
+			public void setLength(int length) {
+				this.length = length;
+				
+			}
+			
+			public int getLength() {
+				return length;
+			}
+			
+			public void setWidth(int width) {
+				this.width = width;
+				
+			}
+			
+			public int getWidth() {
+				return width;
+			
 
-	public void setColor(String color) {
-		this.color = color;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public void setBorderWidth(int borderwidth) {
-		this.borderwidth = borderwidth;
-
-	}
-
-	public int getBorderWidth() {
-		return borderwidth;
-	}
+		}
 
 }
 
